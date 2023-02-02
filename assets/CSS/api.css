@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+* {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif";
+}
+
+/*_____________________ Principal Element's __________________________*/
+
+body {
+  top: 15vh;
+  user-select: none;
+  position: relative;
+  background-color: #28223f;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+}
+
+.search-users {
+  top: 15px;
+  border: none;
+  width: 300px;
+  height: 60px;
+  outline: none;
+  font-size: 14pt;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  transition: scale 0.5s;
+  color: rgba(0, 0, 0, 0.534);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.search-users:focus {
+  scale: 1.1;
+  transition: scale 0.5s;
+}
+
+
+/*_______________________ Msn Error _______________________________*/
+
+.msn-error {
+  top: -640px;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  position: relative;
+  border-radius: 50px;
+  background-color: white;  
+  transition: top .4s, width .3s, height .3s, border-radius .5s ease-in-out;
+  transition-delay: .3s, .0s, .0s, 0s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.msn-error div {
+  transform: translateY(0px);
+  visibility: hidden;
+}
+
+/*_______________________________ Msn Error Animation ___________________________________*/
+
+.msn-error-animation {
+  top: -530px;
+  z-index: -1;
+  width: 360px;
+  height: 120px;
+  position: relative;
+  border-radius: 15px;
+  background-color: white;
+  transition: top .4s, width .3s, height .3s, border-radius .5s ease-in-out;
+  transition-delay: 0s, .3s, .3s, 0s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.msn-error-animation div {
+  font-size: 12pt;
+  text-align: center;
+  visibility: visible;
+  transform: translateY(5px);
+  transition: visibility, transform .5s;
+  transition-delay: 0.54s, .5s;
+}
+
+.msn-error-animation div span {
+  font-weight: 500;
+  position: relative;
+}
+
+.msn-error-animation span:nth-child(1) {
+  top: 10px;
+  left: 145px;
+  color: rgb(255, 0, 0);
+}
+
+.msn-error-animation span:nth-child(2) {
+  top: 45px;
+  right: 35px;
+}
+
+.msn-error-animation span:nth-child(3) {
+  top: 55px;
+}
+
+/*_______________________________ User ___________________________________*/
+
+.user-elements {
+  top: -30px;
+  z-index: -1;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  border-radius: 25px;
+}
+
+
+.icon-avatar-user {
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #1f1a36;
+  transition: top .5s, width .3s, height .3s, border-radius .5s;
+  transition-delay: .7s, .4s, .4s, .5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.icon-avatar-user img {
+  top: 15px;
+  width: 180px;
+  height: 170px;
+  visibility: hidden;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+  transition: visibility .2s;
+  transition-delay: .2s;
+
+}
+
+.info-elemets {
+  top: -65px;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #231e39 ;
+  transition: top .5s, width .3s, height .3s, border-radius .5s;
+  transition-delay: .7s, .3s, .3s, .5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.info-elemets span {
+  color: white;
+  font-weight: 600;
+  visibility: hidden;
+  position: relative;
+
+  transition: visibility .2s;
+  transition-delay: .1s;
+}
+
+.info-elemets span:nth-child(1) {
+  top: 110px;
+  left: 0%;
+  width: 100%;
+  font-size: 16pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+.info-elemets span:nth-child(2) {
+  top: 275px;
+  right: 28%;
+  width: 100%;
+  font-size: 16pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+  /*numero de segidores*/
+}
+
+.info-elemets span:nth-child(3) {
+  top: 310px;
+  right: 55%;
+  width: 45%;
+  font-size: 13pt;
+  position: absolute;  
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+    /*texto de seguidores*/
+}
+
+.info-elemets span:nth-child(4) {
+  top: 275px;
+  left: 53%;
+  width: 45%;
+  font-size: 16pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+  /*numero de pessoas que segue*/
+}
+
+.info-elemets span:nth-child(5) {
+  top: 310px;
+  left: 53%;
+  width: 45%;
+  font-size: 13pt;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+.info-elemets span:nth-child(6) {
+  top: 160px;
+  left: 0%;
+  width: 100%;
+  font-size: 15pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+.info-elemets span:nth-child(7) {
+  top: 190px;
+  left: 0%;
+  width: 100%;
+  font-size: 13pt;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+
+/*_______________________________ User Avatar Element's ___________________________________*/
+
+.icon-avatar-user-animation {
+  top: 100px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 25px;
+  background-color: #1f1a36;
+  transition: top .5s, width .5s, height .5s, border-radius .5s;
+  transition-delay: 0s, .4s, .4s, 0s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.icon-avatar-user-animation img {
+
+  width: 180px;
+  height: 170px;
+  position: relative;
+  visibility: visible;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+  /*_________________ Transitions effect's*_________________*/
+
+  transform: translateY(15px);
+  transition: visibility .2s, transform .5s;
+  transition-delay: 0.68s, .6s;
+
+}
+
+
+.info-elemets-animation {
+  top: 30px;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 15px;
+  background-color: #231e39 ;
+  transition: top .5s, width .5s, height .5s, border-radius .5s;
+  transition-delay: 0s, .4s, .4s, 0s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.info-elemets-animation span {
+  color: white;
+  font-weight: 600;
+  visibility: visible;
+  position: relative;
+  /*_________________ Transitions effect's*_________________*/
+  transition: visibility .3s;
+  transition-delay: .7s;
+
+}
+
+.info-elemets-animation span:nth-child(1) {
+  left: 0%;
+  top: 110px;
+  width: 100%;
+  font-size: 16pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+.info-elemets-animation span:nth-child(2) {
+  left: 0%;
+  top: 275px;
+  width: 45%;
+  font-size: 16pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+  /*numero de segidores*/
+}
+
+.info-elemets-animation span:nth-child(3) {
+  top: 310px;
+  right: 55%;
+  width: 45%;
+  font-size: 13pt;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+    /*texto de segidores*/
+}
+
+.info-elemets-animation span:nth-child(4) {
+  top: 275px;
+  left: 53%;
+  width: 45%;
+  font-size: 16pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+  /*numero de pessoas que segue*/
+}
+
+.info-elemets-animation span:nth-child(5) {
+  top: 310px;
+  left: 53%;
+  width: 45%;
+  font-size: 13pt;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+.info-elemets-animation span:nth-child(6) {
+  left: 0%;
+  top: 160px;
+  width: 100%;
+  font-size: 15pt;
+  font-weight: 100;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
+
+.info-elemets-animation span:nth-child(7) {
+  top: 190px;
+  left: 0%;
+  width: 100%;
+  font-size: 13pt;
+  position: absolute;
+  text-shadow: 1px 2px rgba(143, 143, 143, 0.466);
+}
