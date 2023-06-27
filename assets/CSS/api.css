@@ -368,18 +368,62 @@ h1 {
 }
 
 
-            /*_____________________________Mobile Screen Adptation __________________________________*/
+                                                              /*______________ Mobile Screen Adpatation ________________*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 414px) {
   
   .user-elements {
-      position: relative;
-      transform: scale(.7);
-      right: 100px;
+    top: -100px;
+    right: 100px;
+    position: relative;
+    transform: scale(.73);
   }
+}
+
+@media screen and (max-width: 412px) {
   
+  .user-elements {
+    top: -100px;
+    right: 100px;
+    position: relative;
+    transform: scale(.73);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  
+  .user-elements {
+    top: -114px;
+    right: 119px;
+    position: relative;
+    transform: scale(.65);
+  }
+
   .msn-error-animation {
-      position: relative;
-      transform: scale(.9);
+    transform: scale(.8);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+  h1 {
+    font-size: 15pt;
+  }
+
+  .search-users {
+    transform: scale(.8)
+  }
+
+  .user-elements {
+    top: -177px;
+    right: 137px;
+    position: relative;
+    transform: scale(.5);  
+  }
+
+  .msn-error-animation {
+    right: 20px;
+    position: relative;
+    transform: scale(.7);
   }
 }
